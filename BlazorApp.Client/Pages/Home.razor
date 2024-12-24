@@ -9,8 +9,7 @@
             @bind-Value="@_item"
             TextFieldName="@nameof(Item.Text)"
             ValueFieldName="@nameof(Item.Value)"
-            SearchMode="@ListSearchMode.AutoSearch"
-            SearchFilterCondition="@ListSearchFilterCondition.Contains" />
+            FilteringMode="@DataGridFilteringMode.Contains" />
 
 <DxTagBox TData="Item"
           TValue="int"
@@ -18,8 +17,7 @@
           @bind-Values="@_items"
           TextFieldName="@nameof(Item.Text)"
           ValueFieldName="@nameof(Item.Value)"
-          SearchMode="@ListSearchMode.AutoSearch"
-          SearchFilterCondition="@ListSearchFilterCondition.Contains" />
+          FilteringMode="@DataGridFilteringMode.Contains" />
 
 @code
 {
